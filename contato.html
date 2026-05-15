@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato – Crema e Castelhano Despachante</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <nav>
+        <a class="nav-logo" href="index.html"><span>C&C</span> Despachante</a>
+        <div class="nav-links">
+            <a href="index.html">Início</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="servicos.html">Serviços</a>
+            <a href="contato.html" class="active">Contato</a>
+        </div>
+    </nav>
+
+    <div class="cabecalho">
+        <small>Fale com a gente</small>
+        <h1>Contato</h1>
+    </div>
+
+    <section class="secao">
+        <div class="contato-grid">
+
+            <div>
+                <h2>Informações</h2>
+                <div class="info-lista">
+                    <div class="info-item">
+                        <div>
+                            <h4>Endereço</h4>
+                            <p>Tv. Lourival Belmiro Berti, 182<br>Cidade Jardim – São José dos Pinhais/PR</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div>
+                            <h4>WhatsApp</h4>
+                            <a href="https://wa.me/5541988665151" target="_blank">+55(41)98866-5151</a><br>
+                            <a href="https://wa.me/5541988665151" target="_blank" class="social-link">💬 Abrir
+                                WhatsApp</a>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div>
+                            <h4>Instagram</h4>
+                            <a href="#" target="_blank" class="social-link">📸 @cremaecastelhano</a>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div>
+                            <h4>Horário</h4>
+                            <p>Seg–Sex: 8h às 12h, 13:30h ás 18:00h</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mapa-wrap">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3602.4!2d-49.2059!3d-25.5374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sCidade+Jardim%2C+S%C3%A3o+Jos%C3%A9+dos+Pinhais%2C+PR!5e0!3m2!1spt-BR!2sbr!4v1234567890"
+                        allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+
+            <div class="formulario">
+                <h2>Envie uma mensagem</h2>
+                <div class="campo-duplo">
+                    <div class="campo">
+                        <label>Nome</label>
+                        <input type="text" id="f-nome" placeholder="Seu nome" />
+                    </div>
+                    <div class="campo">
+                        <label>Telefone</label>
+                        <input type="tel" id="f-tel" placeholder="(41) 5541988665151" />
+                    </div>
+                </div>
+                <div class="campo">
+                    <label>E-mail</label>
+                    <input type="email" id="f-email" placeholder="email@exemplo.com" />
+                </div>
+                <div class="campo">
+                    <label>Serviço de interesse</label>
+                    <select id="f-servico">
+                        <option value="">Selecione...</option>
+                        <option>Transferência de Veículos</option>
+                        <option>Licenciamento</option>
+                        <option>Segunda Via de Documentos</option>
+                        <option>Regularização Documental</option>
+                        <option>Emplacamento</option>
+                        <option>Consultoria Documental</option>
+                        <option>Outro</option>
+                    </select>
+                </div>
+                <div class="campo">
+                    <label>Mensagem</label>
+                    <textarea id="f-msg" placeholder="Como podemos te ajudar?"></textarea>
+                </div>
+                <button class="btn btn-vermelho btn-bloco" onclick="enviarForm()">Enviar Mensagem</button>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-logo"><span>C&C</span> Despachante</div>
+        <p>© 2025 Crema e Castelhano · São José dos Pinhais/PR</p>
+    </footer>
+
+    <a class="wa-float" href="https://wa.me/5541988665151" target="_blank" title="WhatsApp">💬</a>
+    <div class="toast" id="toast">✅ Mensagem enviada!</div>
+
+    <script src="contato.js"></script>
+</body>
+
+</html>
